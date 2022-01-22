@@ -1,0 +1,16 @@
+{
+	"categories": [
+		{
+			"id": "gui",
+			"name": "GUI",
+			"packs": [
+				{
+					"id": "numbered_hotbar",
+					"name": "Numbered Hotbar",
+					"description": "",
+					"incompatible": []
+				}
+			]
+		}
+	]
+}
