@@ -1,8 +1,5 @@
 {
-  "devDependencies": {
-    "@josee9988/minifyall": "^1.2.2"
-  },
   "scripts": {
-    "build": "mkdir build && cp -r resourcepacks build && minifyall -d build"
+    "build": "mkdir build && cp -r resourcepacks build && node scripts/build/index.mjs"
   }
 }
