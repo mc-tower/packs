@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "build": "mkdir build && cp -r resourcepacks build && node scripts/build/index.mjs"
+    "build": "mkdir build && cp -r resourcepacks build && node scripts/build/index.mjs && scripts/build/clear.sh"
   }
 }
