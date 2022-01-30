@@ -2,6 +2,9 @@
 	"resourcepacks": {
 		"gui": [
 			"numbered_hotbar"
+		],
+		"utility": [
+			"directional_hoppers"
 		]
 	}
 }
