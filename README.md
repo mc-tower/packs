@@ -80,6 +80,23 @@ create `resources.json` in resource pack root folder and fill with this content:
 }
 ```
 
+## Retrieving default resources
+
+[*Answered here*](https://gaming.stackexchange.com/a/204641)
+
+You should find `minecraft.jar`, and then run from folder with this file
+
+```bash
+unzip minecraft.jar 'assets/*' -d 'default'
+```
+
+Resource pack will be in the `default` folder.
+
+*Where to find `minecraft.jar`*
+
+- Official launcher: `<minecraft folder>/versions/<version>/`
+- MultiMC: `<multimc folder>/libraries/com/mojang/minecraft/<version>/`
+
 ## [Pack format](https://minecraft.fandom.com/wiki/Resource_Pack#Pack_format)
 
 | Format | Versions        |
@@ -95,11 +112,13 @@ create `resources.json` in resource pack root folder and fill with this content:
 
 ## Testing
 
-You need Java 17 for Minecraft 1.17+, Java 8 for Minecraft 1.6+
+You can use Java 17 for Minecraft 1.13+, Java 8 for Minecraft 1.6+
 
 ## Useful links
 
 - https://minecraft.fandom.com/wiki/Resource_Pack
-- https://minecraft.fandom.com/wiki/Data_pack
+- https://minecraft.fandom.com/wiki/Model
 - https://minecraft.fandom.com/wiki/History_of_textures
 - https://minecraft.fandom.com/wiki/Texture_Update
+
+- https://minecraft.fandom.com/wiki/Data_pack
