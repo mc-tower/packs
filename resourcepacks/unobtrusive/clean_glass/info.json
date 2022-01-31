@@ -3,6 +3,6 @@
 	"name": "Clean glass",
 	"category": "unobtrusive",
 	"description": "",
-	"incompatible": [],
+	"incompatible": ["unobtrusive/borderless_glass"],
 	"pack_version": "1-8"
 }
