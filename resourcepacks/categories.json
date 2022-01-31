@@ -1,12 +1,7 @@
 {
 	"categories": [
-		{
-			"id": "gui",
-			"name": "GUI"
-		},
-		{
-			"id": "utility",
-			"name": "Utility"
-		}
+		{ "id": "gui", "name": "GUI" },
+		{ "id": "unobtrusive", "name": "Unobtrusive" },
+		{ "id": "utility", "name": "Utility" }
 	]
 }
