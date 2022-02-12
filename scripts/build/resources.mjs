@@ -41,7 +41,7 @@ function convertResources(res_path) {
 	})
 }
 
-async function convertList(buildFolder, list, categories_list) {
+async function convertAll(buildFolder, list, categories_list) {
 	let result = {
 		categories: []
 	}
@@ -64,7 +64,16 @@ async function convertList(buildFolder, list, categories_list) {
 			name: info.name,
 			description: info.description || "",
 			incompatible: info.incompatible || [],
+			versions: info.versions || [],
 		})
+
+		if (info.versions) {
+			info.versions.forEach((v) => {
+				convertResources(`${buildFolder}/${path}/versions/${v.folder}/resources.json`)
+			})
+		} else {
+			convertResources(`${buildFolder}/${path}/resources.json`)
+		}
 	}
 
 	Object.keys(categories).forEach((c) => {
@@ -83,13 +92,9 @@ export function run(buildFolder) {
 		if (err) throw err
 		const list = nested2list(blob2json(data))
 
-		list.forEach((path) => {
-			convertResources(`${buildFolder}/${path}/resources.json`)
-		})
-
 		readFile(buildFolder + '/resourcepacks/categories.json', (err, data) => {
 			if (err) throw err
-			convertList(buildFolder, list, JSON.parse(data).categories)
+			convertAll(buildFolder, list, JSON.parse(data).categories)
 		})
 	})
 }
