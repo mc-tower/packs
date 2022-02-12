@@ -2,7 +2,5 @@
 	"id": "clean_glass",
 	"name": "Clean glass",
 	"category": "unobtrusive",
-	"description": "",
-	"incompatible": ["unobtrusive/borderless_glass"],
-	"pack_version": "1-8"
+	"incompatible": ["unobtrusive/borderless_glass"]
 }

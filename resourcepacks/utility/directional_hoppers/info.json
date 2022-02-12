@@ -1,8 +1,5 @@
 {
 	"id": "directional_hoppers",
 	"name": "Directional Hoppers",
-	"category": "utility",
-	"description": "",
-	"incompatible": [],
-	"pack_version": "1-8"
+	"category": "utility"
 }

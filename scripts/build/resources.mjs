@@ -62,8 +62,8 @@ async function convertList(buildFolder, list, categories_list) {
 		categories[info.category].packs.push({
 			id: info.id,
 			name: info.name,
-			description: info.description,
-			incompatible: info.incompatible,
+			description: info.description || "",
+			incompatible: info.incompatible || [],
 		})
 	}
 
