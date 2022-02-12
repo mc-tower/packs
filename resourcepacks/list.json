@@ -8,7 +8,8 @@
 			"clean_glass"
 		],
 		"utility": [
-			"directional_hoppers"
+			"directional_hoppers",
+			"glowing_ores"
 		]
 	}
 }
