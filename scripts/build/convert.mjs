@@ -5,6 +5,11 @@ import {
 	writeFileSync
 } from 'fs'
 
+import sanitizeHtml from 'sanitize-html'
+import showdown from 'showdown'
+
+let mdConverter = new showdown.Converter()
+
 /**
  * Convert nested folder structure to plain list of paths
  *
@@ -41,6 +46,17 @@ function convertResources(res_path) {
 	})
 }
 
+function convertDescription(description, type) {
+	switch (type) {
+		case 'html':
+			return sanitizeHtml(description)
+		case 'markdown':
+			return sanitizeHtml(mdConverter.makeHtml(description))
+		default:
+			return description
+	}
+}
+
 async function convertAll(buildFolder, list, categories_list) {
 	let result = {
 		categories: []
@@ -62,7 +78,10 @@ async function convertAll(buildFolder, list, categories_list) {
 		categories[info.category].packs.push({
 			id: info.id,
 			name: info.name,
-			description: info.description || "",
+			description: convertDescription(
+				info.description || '',
+				info.description_type || ''
+			),
 			incompatible: info.incompatible || [],
 			versions: info.versions || [],
 		})

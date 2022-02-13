@@ -1,5 +1,11 @@
 {
   "scripts": {
-    "build": "mkdir build && cp -r resourcepacks build && node scripts/build/index.mjs && scripts/build/clear.sh"
+    "build": "mkdir build && cp -r resourcepacks build && node scripts/build/index.mjs && scripts/build/clear.sh",
+    "format": "prettier --write --plugin-search-dir=. './{resourcepacks,scripts}/**/*.{js,mjs,json}'"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "sanitize-html": "^2.7.0",
+    "showdown": "^2.0.0-alpha"
   }
 }
