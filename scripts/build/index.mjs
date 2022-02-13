@@ -1,4 +1,4 @@
-import { run as buildResourceFiles } from './resources.mjs'
+import { run as buildResourceFiles } from './convert.mjs'
 
 const buildFolder = 'build'
 
