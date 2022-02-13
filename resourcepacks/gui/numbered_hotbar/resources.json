@@ -1,34 +1,34 @@
 {
-	"assets/minecraft/textures/gui": {
-		".": ["widgets.png"],
-		"container": {
-			"creative_inventory": [
-				"tab_inventory.png",
-				"tab_item_search.png",
-				"tab_items.png"
-			],
-			".": [
-				"anvil.png",
-				"blast_furnace.png",
-				"cartography_table.png",
-				"enchanting_table.png",
-				"generic_54.png",
-				"hopper.png",
-				"inventory.png",
-				"shulker_box.png",
-				"smoker.png",
-				"villager2.png",
-				"beacon.png",
-				"brewing_stand.png",
-				"crafting_table.png",
-				"dispenser.png",
-				"furnace.png",
-				"grindstone.png",
-				"horse.png",
-				"loom.png",
-				"smithing.png",
-				"stonecutter.png"
-			]
-		}
-	}
+  "assets/minecraft/textures/gui": {
+    ".": ["widgets.png"],
+    "container": {
+      "creative_inventory": [
+        "tab_inventory.png",
+        "tab_item_search.png",
+        "tab_items.png"
+      ],
+      ".": [
+        "anvil.png",
+        "blast_furnace.png",
+        "cartography_table.png",
+        "enchanting_table.png",
+        "generic_54.png",
+        "hopper.png",
+        "inventory.png",
+        "shulker_box.png",
+        "smoker.png",
+        "villager2.png",
+        "beacon.png",
+        "brewing_stand.png",
+        "crafting_table.png",
+        "dispenser.png",
+        "furnace.png",
+        "grindstone.png",
+        "horse.png",
+        "loom.png",
+        "smithing.png",
+        "stonecutter.png"
+      ]
+    }
+  }
 }

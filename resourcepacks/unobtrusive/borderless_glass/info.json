@@ -1,6 +1,6 @@
 {
-	"id": "borderless_glass",
-	"name": "Borderless glass",
-	"category": "unobtrusive",
-	"incompatible": ["unobtrusive/clean_glass"]
+  "id": "borderless_glass",
+  "name": "Borderless glass",
+  "category": "unobtrusive",
+  "incompatible": ["unobtrusive/clean_glass"]
 }

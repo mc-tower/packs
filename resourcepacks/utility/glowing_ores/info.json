@@ -1,17 +1,17 @@
 {
-	"id": "glowing_ores",
-	"name": "Glowing ores",
-	"category": "utility",
-	"description": "Requires OptiFine and `Video Settings - Quality - Emissive Textures` enabled",
-	"description_type": "markdown",
-	"versions": [
-		{
-			"format": "1-6",
-			"folder": "old"
-		},
-		{
-			"format": "7+",
-			"folder": "new"
-		}
-	]
+  "id": "glowing_ores",
+  "name": "Glowing ores",
+  "category": "utility",
+  "description": "Requires OptiFine and `Video Settings - Quality - Emissive Textures` enabled",
+  "description_type": "markdown",
+  "versions": [
+    {
+      "format": "1-6",
+      "folder": "old"
+    },
+    {
+      "format": "7+",
+      "folder": "new"
+    }
+  ]
 }

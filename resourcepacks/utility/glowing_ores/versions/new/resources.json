@@ -1,28 +1,28 @@
 {
-	"assets/minecraft": {
-		"optifine": ["emissive.properties"],
-		"textures/block": [
-			"ancient_debris_side_e.png",
-			"ancient_debris_top_e.png",
-			"coal_ore_e.png",
-			"copper_ore_e.png",
-			"deepslate_coal_ore_e.png",
-			"deepslate_copper_ore_e.png",
-			"deepslate_diamond_ore_e.png",
-			"deepslate_emerald_ore_e.png",
-			"deepslate_gold_ore_e.png",
-			"deepslate_iron_ore_e.png",
-			"deepslate_lapis_ore_e.png",
-			"deepslate_redstone_ore_e.png",
-			"diamond_ore_e.png",
-			"emerald_ore_e.png",
-			"gilded_blackstone_e.png",
-			"gold_ore_e.png",
-			"iron_ore_e.png",
-			"lapis_ore_e.png",
-			"nether_gold_ore_e.png",
-			"nether_quartz_ore_e.png",
-			"redstone_ore_e.png"
-		]
-	}
+  "assets/minecraft": {
+    "optifine": ["emissive.properties"],
+    "textures/block": [
+      "ancient_debris_side_e.png",
+      "ancient_debris_top_e.png",
+      "coal_ore_e.png",
+      "copper_ore_e.png",
+      "deepslate_coal_ore_e.png",
+      "deepslate_copper_ore_e.png",
+      "deepslate_diamond_ore_e.png",
+      "deepslate_emerald_ore_e.png",
+      "deepslate_gold_ore_e.png",
+      "deepslate_iron_ore_e.png",
+      "deepslate_lapis_ore_e.png",
+      "deepslate_redstone_ore_e.png",
+      "diamond_ore_e.png",
+      "emerald_ore_e.png",
+      "gilded_blackstone_e.png",
+      "gold_ore_e.png",
+      "iron_ore_e.png",
+      "lapis_ore_e.png",
+      "nether_gold_ore_e.png",
+      "nether_quartz_ore_e.png",
+      "redstone_ore_e.png"
+    ]
+  }
 }

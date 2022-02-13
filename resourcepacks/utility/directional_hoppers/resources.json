@@ -1,11 +1,11 @@
 {
-	"assets/minecraft": {
-		"blockstates": ["hopper.json"],
-		"models/block": ["hopper_side.json"],
-		"textures/block": [
-			"hopper_inside_arrow.png",
-			"hopper_outside_l.png",
-			"hopper_outside_r.png"
-		]
-	}
+  "assets/minecraft": {
+    "blockstates": ["hopper.json"],
+    "models/block": ["hopper_side.json"],
+    "textures/block": [
+      "hopper_inside_arrow.png",
+      "hopper_outside_l.png",
+      "hopper_outside_r.png"
+    ]
+  }
 }

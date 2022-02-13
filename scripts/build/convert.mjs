@@ -1,9 +1,4 @@
-import {
-	readFile,
-	readFileSync,
-	writeFile,
-	writeFileSync
-} from 'fs'
+import { readFile, readFileSync, writeFile, writeFileSync } from 'fs'
 
 import sanitizeHtml from 'sanitize-html'
 import showdown from 'showdown'
@@ -18,7 +13,8 @@ let mdConverter = new showdown.Converter()
  * @return {String[]}         Resulting list of paths
  */
 function nested2list(nested, current = '') {
-	let result = [], prefix
+	let result = [],
+		prefix
 	for (let folder of Object.keys(nested)) {
 		if (folder === '.' || nested[folder] instanceof Array) {
 			prefix = folder === '.' ? current : current + folder + '/'
@@ -40,9 +36,15 @@ function convertResources(res_path) {
 		if (err) throw err
 		const content = blob2json(data)
 
-		writeFile(res_path, JSON.stringify({
-			files: nested2list(content)
-		}), (err) => { if (err) throw err })
+		writeFile(
+			res_path,
+			JSON.stringify({
+				files: nested2list(content),
+			}),
+			(err) => {
+				if (err) throw err
+			}
+		)
 	})
 }
 
@@ -59,14 +61,14 @@ function convertDescription(description, type) {
 
 async function convertAll(buildFolder, list, categories_list) {
 	let result = {
-		categories: []
+		categories: [],
 	}
 
 	let categories = {}
 	categories_list.forEach((c) => {
 		categories[c.id] = {
 			name: c.name,
-			packs: []
+			packs: [],
 		}
 	})
 
@@ -88,7 +90,9 @@ async function convertAll(buildFolder, list, categories_list) {
 
 		if (info.versions) {
 			info.versions.forEach((v) => {
-				convertResources(`${buildFolder}/${path}/versions/${v.folder}/resources.json`)
+				convertResources(
+					`${buildFolder}/${path}/versions/${v.folder}/resources.json`
+				)
 			})
 		} else {
 			convertResources(`${buildFolder}/${path}/resources.json`)
@@ -103,7 +107,10 @@ async function convertAll(buildFolder, list, categories_list) {
 		})
 	})
 
-	writeFileSync(`${buildFolder}/resourcepacks/list.json`, JSON.stringify(result))
+	writeFileSync(
+		`${buildFolder}/resourcepacks/list.json`,
+		JSON.stringify(result)
+	)
 }
 
 export function run(buildFolder) {
