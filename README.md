@@ -1,8 +1,22 @@
 # Packs repository
 
+## File with info about pack in `info.json` structure.
+
+- `id`: Pack identifier
+- `name`: Pack name displayed
+- `category`: Pack category
+- `description` (optional): Pack description displayed in the modal after clicking on the question mark
+- `description_type` (optional): Description type, if present, must be one of `markdown`, `html`
+- `incompatible` (optional): List of incompatible packs, each pack in `category_id/pack_id` format
+- `versions` (optional): List of varying pack resources for different versions of **pack_format**
+  - `format`: **pack_format** to apply this version, can be a single value: `5`, or a range: `1-5`, `5+`, `5-`
+  - `folder`: A subfolder in the `versions` folder with resources for this version
+
+[*Example*](resourcepacks/utility/glowing_ores/info.json)
+
 ## The following scheme is used to describe the folder and file structure.
 
-*For `resources.json` and `resourcepacks/list.json`*
+For `resources.json`.
 
 1. Write folders in nested format
 
