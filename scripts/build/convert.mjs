@@ -132,6 +132,8 @@ async function convertAll(buildFolder, list, categories_list) {
 		convertPreview(`${buildFolder}/${path}`, info.preview_format || 'jpg')
 	}
 
+	convertPreview(buildFolder + '/resourcepacks', 'png')
+
 	Object.keys(categories).forEach((c) => {
 		result.categories.push({
 			id: c,
