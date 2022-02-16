@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mkdir build 2>/dev/null || rm -rf build && mkdir build
 cp -r resourcepacks build
