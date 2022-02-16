@@ -7,6 +7,7 @@
 - `category`: Pack category
 - `description` (optional): Pack description displayed in the modal after clicking on the question mark
 - `description_type` (optional): Description type, if present, must be one of `markdown`, `html`
+- `preview_format` (optional): File extension of preview, default is `jpg`, file name should be `preview`
 - `incompatible` (optional): List of incompatible packs, each pack in `category_id/pack_id` format
 - `versions` (optional): List of varying pack resources for different versions of **pack_format**
   - `format`: **pack_format** to apply this version, can be a single value: `5`, or a range: `1-5`, `5+`, `5-`
@@ -127,6 +128,15 @@ Resource pack will be in the `default` folder.
 ## Testing
 
 You can use Java 17 for Minecraft 1.13+, Java 8 for Minecraft 1.6+
+
+## Building
+
+You need [imagemagick](https://imagemagick.org/script/download.php) installed, then
+
+```bash
+yarn install
+yarn build
+```
 
 ## Useful links
 
