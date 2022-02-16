@@ -1,9 +1,18 @@
-import { readFile, readFileSync, writeFile, writeFileSync } from 'fs'
+import {
+	readFile,
+	readFileSync,
+	stat as fileStat,
+	writeFile,
+	writeFileSync,
+} from 'fs'
 
 import sanitizeHtml from 'sanitize-html'
 import showdown from 'showdown'
 
 let mdConverter = new showdown.Converter()
+
+import gm from 'gm'
+let imageMagick = gm.subClass({ imageMagick: true })
 
 /**
  * Convert nested folder structure to plain list of paths
@@ -59,6 +68,28 @@ function convertDescription(description, type) {
 	}
 }
 
+function convertPreview(pack_path, preview_ext) {
+	const extensions = new Set(['jpg', 'avif', 'webp'])
+	extensions.delete(preview_ext)
+
+	const preview_basename = pack_path + '/preview.'
+
+	// https://stackoverflow.com/a/17699926
+	fileStat(preview_basename + preview_ext, (err, _) => {
+		if (err == null) {
+			// file exists
+			extensions.forEach((ext) => {
+				imageMagick(preview_basename + preview_ext).write(
+					preview_basename + ext,
+					(err) => {
+						if (err) console.error(err)
+					}
+				)
+			})
+		}
+	})
+}
+
 async function convertAll(buildFolder, list, categories_list) {
 	let result = {
 		categories: [],
@@ -97,6 +128,8 @@ async function convertAll(buildFolder, list, categories_list) {
 		} else {
 			convertResources(`${buildFolder}/${path}/resources.json`)
 		}
+
+		convertPreview(`${buildFolder}/${path}`, info.preview_format || 'jpg')
 	}
 
 	Object.keys(categories).forEach((c) => {

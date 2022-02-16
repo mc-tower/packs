@@ -4,6 +4,7 @@
     "format": "prettier --write --plugin-search-dir=. './{resourcepacks,scripts}/**/*.{js,mjs,json}'"
   },
   "devDependencies": {
+    "gm": "^1.23.1",
     "prettier": "^2.5.1",
     "sanitize-html": "^2.7.0",
     "showdown": "^2.0.0-alpha"
