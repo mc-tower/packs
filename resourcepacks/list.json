@@ -1,7 +1,7 @@
 {
   "resourcepacks": {
     "gui": ["numbered_hotbar"],
-    "unobtrusive": ["borderless_glass", "clean_glass"],
+    "unobtrusive": ["borderless_glass", "clean_glass", "clean_glass_connected"],
     "utility": ["directional_hoppers", "glowing_ores"]
   }
 }

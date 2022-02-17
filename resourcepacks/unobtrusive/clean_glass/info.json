@@ -2,5 +2,8 @@
   "id": "clean_glass",
   "name": "Clean glass",
   "category": "unobtrusive",
-  "incompatible": ["unobtrusive/borderless_glass"]
+  "incompatible": [
+    "unobtrusive/borderless_glass",
+    "unobtrusive/clean_glass_connected"
+  ]
 }

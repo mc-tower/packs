@@ -1,0 +1,13 @@
+{
+  "assets/minecraft": {
+    "optifine/ctm": [
+      "0.png",
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "block_glass.properties"
+    ],
+    "textures/block": ["glass.png"]
+  }
+}
