@@ -7,7 +7,6 @@
       "3.png",
       "4.png",
       "block_glass.properties"
-    ],
-    "textures/block": ["glass.png"]
+    ]
   }
 }

@@ -3,5 +3,6 @@
   "name": "Clean glass (connected)",
   "category": "unobtrusive",
   "description": "Requires OptiFine",
-  "incompatible": ["unobtrusive/borderless_glass", "unobtrusive/clean_glass"]
+  "incompatible": ["unobtrusive/borderless_glass", "unobtrusive/clean_glass"],
+  "extends": "unobtrusive/clean_glass"
 }

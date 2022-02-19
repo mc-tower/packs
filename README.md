@@ -9,6 +9,7 @@
 - `description_type` (optional): Description type, if present, must be one of `markdown`, `html`
 - `preview_format` (optional): File extension of preview, default is `jpg`, file name should be `preview`
 - `incompatible` (optional): List of incompatible packs, each pack in `category_id/pack_id` format
+- `extends` (optional): Pack in `category_id/pack_id` format to include resources from. Included resources will overwritten by resources with the same names from current resourcepack. Including resources from pack with more than one version is not supported
 - `versions` (optional): List of varying pack resources for different versions of **pack_format**
   - `format`: **pack_format** to apply this version, can be a single value: `5`, or a range: `1-5`, `5+`, `5-`
   - `folder`: A subfolder in the `versions` folder with resources for this version

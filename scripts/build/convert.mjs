@@ -116,6 +116,7 @@ async function convertAll(buildFolder, list, categories_list) {
 				info.description_type || ''
 			),
 			incompatible: info.incompatible || [],
+			extends: info.extends,
 			versions: info.versions || [],
 		})
 
